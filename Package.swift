@@ -16,5 +16,6 @@ let package = Package(
             name: "MMDrawerController",
             path: "MMDrawerController"
         )
-    ]
+    ],
+    swiftLanguageVersions: [.v5]
 )
