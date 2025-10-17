@@ -2,26 +2,20 @@
 import PackageDescription
 
 let package = Package(
-    name: "DGActivityIndicatorView",
+    name: "MMDrawerController",
     platforms: [.iOS(.v11)],
     products: [
         .library(
-            name: "DGActivityIndicatorView",
-            targets: ["DGActivityIndicatorView"]
+            name: "MMDrawerController",
+            targets: ["MMDrawerController"]
         ),
     ],
     targets: [
         .target(
-            name: "DGActivityIndicatorView",
-            path: "DGActivityIndicatorView",
-            publicHeadersPath: ".",
-            cSettings: [
-                .headerSearchPath(".")
-            ]
+            name: "MMDrawerController",
+            path: "MMDrawerController",
+            publicHeadersPath: "." // fixes include path issue
         )
     ],
-    swiftLanguageVersions: [.v5],
-    metadata: PackageMetadata(
-        description: "A beautiful activity indicator view for iOS written in Objective-C."
-    )
+    swiftLanguageVersions: [.v5]
 )
