@@ -14,7 +14,7 @@ let package = Package(
         .target(
             name: "MMDrawerController",
             path: "MMDrawerController",
-            publicHeadersPath: "." // fixes include path issue
+            publicHeadersPath: "."
         )
     ],
     swiftLanguageVersions: [.v5]
